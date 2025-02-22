@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card and Badge Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="id.css">
+</head>
+<body>
+    <div id="formContainer" class="container">
+        <h1>Badge Generator</h1>
+        <form id="badgeForm">
+            <p id="eventname">Rosehill Cars</p>
+
+            <label for="name">Person Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="designation">Designation:</label>
+            <input type="text" id="designation" required>
+
+            <label for="company">Company Name:</label>
+            <input type="text" id="company" required>
+
+            <label for="access">Access Level:</label>
+            <select id="access" required>
+                <option value="Visitor">Visitor</option>
+                <option value="VIP">VIP</option>
+                <option value="Driver">Driver</option>
+            </select>
+
+            <!-- Add photo upload input -->
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" accept="image/*" required>
+
+            <button type="submit">Generate Badge</button>
+        </form>
+    </div>
+
+    <div id="badge" class="badge">
+        <div class="badge-header">
+            <h1 id="badgeEvent">Rosehill Cars</h1>
+        </div>
+        <div class="badge-body">
+            <div class="badge-photo">
+                <img id="badgePhoto" src="#" alt="Uploaded Photo" style="display: none;">
+            </div>
+            <div class="badge-details">
+                <h2 id="badgeName">John Doe</h2>
+                <p id="badgeDesignation">Designation</p>
+                <h3 id="badgecontainer">@Company</h3>
+            </div>
+        </div>
+        <div class="badge-footer">
+            <p id="badgeAccess">Access Level</p>
+        </div>
+    </div>
+
+    <button id="dwnBadge" class="dwnBadge">Download Badge</button>
+    <button id="createAnother" class="createAnother">Create Another Badge</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.js"></script>
+    <script src="id.js"></script>
+</body>
+</html>

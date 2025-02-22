@@ -1,0 +1,198 @@
+body {
+    background-color: #825CFF;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.container h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #666;
+    text-align: left;
+}
+
+input[type="text"],
+select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    outline: none;
+    transition: all 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #6A82FB;
+    box-shadow: 0 0 5px rgba(106, 130, 251, 0.5);
+}
+
+.container button {
+    margin-top: 20px;
+    padding: 12px;
+    background: #FC5C7D;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.container button:hover {
+    background: #6A82FB;
+}
+
+.badge {
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Poppins', Arial, sans-serif;
+    display: none;
+    margin-top: 20px;
+}
+
+.badge-header {
+    background: linear-gradient(315deg, #313c47, #001f3f);
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+
+.badge-header h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.badge-body {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.badge-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #001f3f;
+    margin-bottom: 15px;
+}
+
+#badgePhoto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-details {
+    text-align: center;
+}
+
+.badge-details h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.badge-details p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #777;
+    font-weight: 600;
+}
+
+.badge-details h3 {
+    color: #1D72b8;
+    font-size: 11px;
+    margin: 0;
+}
+
+.badge-footer {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+}
+
+.badge-footer p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dwnBadge,
+.createAnother {
+    display: none;
+    margin-top: 20px;
+    padding: 12px;
+    background: #001f3f;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dwnBadge:hover,
+.createAnother:hover {
+    background: #6A82FB;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    input[type="text"],
+    select {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
